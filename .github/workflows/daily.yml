@@ -1,0 +1,30 @@
+name: Build daily brief
+
+on:
+  schedule:
+    - cron: "0 12 * * *"  # daily 12:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+      - run: npm run build:today
+
+      - name: Commit changes
+        run: |
+          git config user.name "daily-brief-bot"
+          git config user.email "daily-brief-bot@users.noreply.github.com"
+          git add data/today.json
+          git commit -m "Update daily brief" || echo "No changes"
+          git push
