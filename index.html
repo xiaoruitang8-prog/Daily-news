@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daily Brief</title>
+
+  <!-- Bubble-ish masthead + Zen-ish serif option -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Zen+Antique+Soft&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="paper">
+    <header class="mast">
+      <div class="brand">
+        <div class="logo">DAILY BRIEF</div>
+        <div class="tag">2 BBC + 2 FT • AI / Tech / Markets / Companies</div>
+      </div>
+
+      <div class="mast-right">
+        <div class="date" id="dateLine"></div>
+        <button class="btn" id="refreshBtn" type="button">Refresh</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="intro" id="intro"></section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>BBC</h2>
+          <div class="rule"></div>
+        </div>
+        <ol class="list" id="bbcList"></ol>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Financial Times</h2>
+          <div class="rule"></div>
+        </div>
+        <ol class="list" id="ftList"></ol>
+      </section>
+
+      <footer class="foot">
+        <div class="muted">
+          Links only. If FT items don’t appear, FT RSS may be blocked—tell me and I’ll switch to alternate sources.
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
