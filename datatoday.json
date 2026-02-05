@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-02-05T00:00:00.000Z",
+  "bbc": [
+    {
+      "source": "BBC",
+      "topic": "Tech",
+      "title": "Example BBC item (will update daily)",
+      "description": "This is a placeholder headline until your daily job runs.",
+      "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+      "pubDate": ""
+    },
+    {
+      "source": "BBC",
+      "topic": "Business",
+      "title": "Example BBC business item (will update daily)",
+      "description": "Will be replaced by the daily script.",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "pubDate": ""
+    }
+  ],
+  "ft": [
+    {
+      "source": "FT",
+      "topic": "AI",
+      "title": "Example FT item (will update daily)",
+      "description": "FT RSS may require access; if empty later, we’ll adjust.",
+      "url": "https://www.ft.com/artificial-intelligence",
+      "pubDate": ""
+    },
+    {
+      "source": "FT",
+      "topic": "Markets",
+      "title": "Example FT markets item (will update daily)",
+      "description": "Will be replaced by the daily script.",
+      "url": "https://www.ft.com/markets",
+      "pubDate": ""
+    }
+  ]
+}
