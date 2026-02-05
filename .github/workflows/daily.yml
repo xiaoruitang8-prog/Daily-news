@@ -28,3 +28,7 @@ jobs:
           git add data/today.json
           git commit -m "Update daily brief" || echo "No changes"
           git push
+on:
+  schedule:
+    - cron: "0 7 * * *"  # daily 07:00 UTC (UK: 07:00 in winter, 08:00 in summer)
+  workflow_dispatch:
